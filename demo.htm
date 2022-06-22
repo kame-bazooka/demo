@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <meta charset="UTF-8">
+  <title>テスト</title>
+  </head>
+  <body>
+    <script>
+      var wnd = null;
+      function openPopup() {
+        wnd = window.open("about:blank", "hoge", "width=100,height=200,top=100,left=100");
+      }
+    </script>
+    <button onclick="openPopup()">ポップアップを開く</button>
+    <button onclick="wnd.resizeTo(100, 100)">リサイズ</button>
+  </body>
+</html>
